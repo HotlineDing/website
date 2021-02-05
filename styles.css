@@ -173,8 +173,9 @@ section:not(.hero) {
     position: relative;
     display: flex;
     justify-content: center;
-
+    overflow: hidden;
 }
+
 
 .name-heading {
     position: absolute;
@@ -190,12 +191,16 @@ section:not(.hero) {
 }
 
 .hero-person-image {
-    max-width: 95%;
+    min-width: 500px;
+    max-width: min(65%,800px);
     user-select: none;
     -webkit-user-drag: none;
     margin-top: auto;
     position: relative;
     z-index: 2;
+    flex-shrink: 0;
+    flex-grow: 1;
+    /* object-fit: cover; */
 }
 
 .scroll-down {
@@ -482,7 +487,8 @@ section:not(.hero) {
 /* Motto Styles */
 .motto {
     height: 35vh;
-    background: url("./images/section_background.jpg") bottom/cover;
+    background: url("./images/chicago-skyline.jpg") top left;
+    background-size: cover;
     position: relative;
     z-index: 1;
 }
@@ -491,7 +497,7 @@ section:not(.hero) {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .75);
+    /* background-color: rgba(0, 0, 0, .75); */
     position: absolute;
     top: 0;
     left: 0;
@@ -836,16 +842,16 @@ section:not(.hero) {
 }
 
 @media screen and (max-width: 600px) {
-    .hero {
+    /* .hero {
         height: 50rem;
-    }
+    } */
 
     .call-to-action p{
         font-size: 2rem;
     }
 
     .motto {
-        height: 60vh;
+        height: 40vh;
     }
 
     .quote::before,
