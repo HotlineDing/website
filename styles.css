@@ -849,7 +849,7 @@ section:not(.hero) {
     }
 
     .hero-person-image {
-        max-width: 80%;
+        max-width: 500px;
     }
 }
 
@@ -859,7 +859,7 @@ section:not(.hero) {
     } */
 
     .hero-person-image {
-        max-width: 80%;
+        max-width: 400px;
     }
     .scroll-down {
         bottom: 5vh;
