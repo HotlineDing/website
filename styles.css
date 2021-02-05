@@ -179,9 +179,9 @@ section:not(.hero) {
 
 .name-heading {
     position: absolute;
-    top: 35%;
+    top: 5vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -0%);
     font-size: 18vw;
     font-family: var(--heading-font-family);
     font-weight: 800;
@@ -744,6 +744,10 @@ section:not(.hero) {
 
 /* Media queries */
 @media screen and (max-width: 1030px) {
+    .scroll-down {
+        bottom: 5vh;
+    }
+
     .nav {
         transform: translateX(-27rem);
         transition: transform .5s;
@@ -839,12 +843,19 @@ section:not(.hero) {
     .my-portfolio .grid {
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
+
+    .scroll-down {
+        bottom: 5vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
     /* .hero {
         height: 50rem;
     } */
+    .scroll-down {
+        bottom: 5vh;
+    }
 
     .call-to-action p{
         font-size: 2rem;
