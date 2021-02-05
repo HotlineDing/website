@@ -847,12 +847,20 @@ section:not(.hero) {
     .scroll-down {
         bottom: 5vh;
     }
+
+    .hero-person-image {
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     /* .hero {
         height: 50rem;
     } */
+
+    .hero-person-image {
+        max-width: 80%;
+    }
     .scroll-down {
         bottom: 5vh;
     }
@@ -904,9 +912,11 @@ section:not(.hero) {
     .nav {
         overflow-y: scroll;
     }
+    
 
     .hero {
-        height: initial;
-        min-height: 100vh;
+        /* height: initial;
+        min-height: 100vh; */
+        max-height: 100vh;
     }
 }
