@@ -22,7 +22,7 @@
 <nav class="nav">
     <div class="intro">
         <h1 class="intro-heading">Alexander Ding</h1>
-        <h2 class="intro-subhead">Aspiring Computer Scientist & Software Engineer</h2>
+        <h2 class="intro-subhead">Aspiring Computer Scientist </h2>
     </div>
 
     <ul class="nav-list">
@@ -91,19 +91,28 @@
                         <!-- <span>
                             Hello! I'm Alexander Ding.
                         </span> -->
-                        I am currently a Junior studying Computer Science at the University of Illinois at Urbana-Champaign.  I am passionate about using my knowledge and skills in creating and developing products everyone can use.  Born and raised in the south side of Chicago, Illinois.
+                        My name is Alex and currently I am a Junior studying Computer Science at the University of Illinois at Urbana-Champaign.  I am passionate about using my knowledge and skills in creating and developing products everyone can use.
+                        What I enjoy the most about Comptuer Science is the ability to build upon layers and layers of abstraction and how APIs and protocols are the things that are able to glue these layers together.
+                        While I need not know what goes on ben
+                        Specifically I am interested in computer architechure, operating systems, backend development, and more. I was born and raised in the south side of Chicago, Illinois.
                     </p>
+                    
                     <p>
-                        Some of the things I like to do during my free time include flying drones, baking, and listening to music.
+                        My other interests and hobbies include finicial markets, trading, flying drones, playing chess, and cooking.
                     </p>
+
                 </div>
+            </div>
+            <!-- <div class="resume">
                 <div class="call-to-action">
                     <p>
                        Click below to view my resume.
                     </p>
+                    
                     <a href="Resume.pdf" class="btn cta-btn" target="_blank">Resume</a>
                 </div>
-            </div>
+            </div> -->
+
         </div>
     </section>
 
@@ -118,36 +127,6 @@
 
     <section class="my-expertise" id="skills">
         <div class="container">
-            <div class="heading-group">
-                <span class="section-head-small">
-                    What I do
-                </span>
-                <h5 class="section-head-large">
-                    My Expertise
-                </h5>
-            </div>
-            
-            <div class="grid">
-                <div class="grid-item orange">
-                    <span class="item-icon">
-                        <i class="ion-wrench"></i>
-                    </span>
-                    <h3 class="item-heading">Soldering</h3>
-                </div>
-                <div class="grid-item blue">
-                    <span class="item-icon">
-                        <i class="ion-image"></i>
-                    </span>
-                    <h3 class="item-heading">Programming</h3>
-                </div>
-                <div class="grid-item yellow">
-                    <span class="item-icon">
-                        <i class="ion-images"></i>
-                    </span>
-                    <h3 class="item-heading">Coding</h3>
-                </div>
-            </div>
-
             <div class="heading-group margin-top">
                 <span class="section-head-small">
                     What I use
@@ -160,49 +139,78 @@
             <div class="grid">
                 <div class="grid-item orange">
                     <div class="item-skill">
-                        <h5 class="skill-name">Custom split-keyboard</h5>
+                        <h5 class="skill-name">Custom built keyboard</h5>
                     </div>
                     <p class="skill-description">
-                        For this project I designed a keyboard entirely from the ground up.  Utilizing KiCAD to design and layout the PCB and FreeCAD to create a 3D model for the case and shell for the keyboard.
+                        I designed a keyboard from the ground up.  Everything from the PCB design and layout to the 3D designed case and shell.  I utilized tools such as AutoCAD, KiCAD, and a laser cutter to design and create the PCB and keyboard case.  I modified open source firmware and cross-compiled for the Arduino Pro Micro microcontroller.
                     </p>
                 </div>
+
                 <div class="grid-item blue">
                     <div class="item-skill">
-                        <h5 class="skill-name">CSS</h5>
+                        <h5 class="skill-name"> Amazon Product Tracker </h5>
                     </div>
                     <p class="skill-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit quae cupiditate ut dolor blanditiis tenetur, 
+                        Developed and deployed web application to periodically scrape products from NewEgg and Amazon for price data and product information and group them in categories.  Then using Flask and python as a backend, the data would be stored in MongoDB and an SQL database to allow users to query and track product price over time and compared to others in its same category.
                     </p>
                 </div>
+
                 <div class="grid-item yellow">
                     <div class="item-skill">
-                        <h5 class="skill-name">Javascript</h5>
+                        <h5 class="skill-name">Realtime Chatroom</h5>
                     </div>
                     <p class="skill-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit quae cupiditate ut dolor blanditiis tenetur, 
+                        Using NodeJS with HTML and CSS I was able to create a realtime chat interface where users can type to multiple other users.  Rooms can be created to seperate chat messages from other rooms.  There is also a users list that notifies and updates whenever a user connects or disconnects.  By integrating a MySQL database, I am able to query and log messages and keep a history of messages and users activity.
                     </p>
                 </div>
                 <div class="grid-item purple">
                     <div class="item-skill">
-                        <h5 class="skill-name">Bootstrap</h5>
+                        <h5 class="skill-name">Raspberry Pi Keypad Lock</h5>
                     </div>
                     <p class="skill-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit quae cupiditate ut dolor blanditiis tenetur, 
+                        For this projecct I wrote an entire single-threaded assembly process to perform matrix scanning on an external keypad for a Rasberry Pi 4.  This required me to learn ARMv8 assembly language and how to deadlock the uncessary cores, initalize my own stack, talk and interact with the GPIO pins, and more.  Used additional toolchains and modified linkers to cross-compile for boot sector of the ARMv8 chip.  Then used 8-segment display to output the keypresses and act as a keypad.
                     </p>
                 </div>
-                <div class="grid-item dark-blue">
-                    <div class="item-skill">
-                        <h5 class="skill-name">Photoshop</h5>
-                    </div>
-                    <p class="skill-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit quae cupiditate ut dolor blanditiis tenetur, 
-                    </p>
+            </div>
+
+
+            <div class="heading-group margin-top">
+                <span class="section-head-small">
+                    What I do
+                </span>
+                <h5 class="section-head-large">
+                    My Expertise
+                </h5>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item orange">
+                    <span class="item-icon">
+                        <i class="ion-social-python"></i>
+                    </span>
+                    <h3 class="item-heading">Python</h3>
+                </div>
+                <div class="grid-item blue">
+                    <span class="item-icon">
+                        <i class="ion-code-working"></i>
+                    </span>
+                    <h3 class="item-heading">Linux/Unix</h3>
+                </div>
+                <div class="grid-item yellow">
+                    <span class="item-icon">
+                        <i class="ion-social-css3"></i>
+                    </span>
+                    <h3 class="item-heading">Coding</h3>
+                </div>
+                <div class="grid-item purple">
+                    <span class="item-icon">
+                        <i class="icon-mongodb"></i>
+                    </span>
+                    <h3 class="item-heading">Database Systems</h3>
                 </div>
             </div>
         </div>
     </section>
-
-
 
 
     <section class="work-experience" id="experience">
@@ -218,38 +226,22 @@
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <timeline-heading>
-                        <h3 class="timeline-entry-name">Web Developer</h3>
-                        <span>2017 - Present</span>
-                    </timeline-heading>
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name"> Embedded Software Engineer</h3>
+                        <span> The Aerospace Corporation</span>
+                        <br> June 2020 - Aug 2020
+                    </div>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat, suscipit pariatur corporis sed necessitatibus nesciunt perspiciatis atque provident repudiandae ipsa corrupti quod commodi vel consequatur ipsum. Ipsa, dicta perspiciatis.
+                        At my internship at the Aerospace Corporation I was able to develop and deploy artificial intelligence models on embedded systems and devices. I was responsible for testing, verifying, and benchmarking specific inference runs on different environments using MLPerf.
+                        In addition to testing different models I tried to improve performance by quantizating and pruning layers on models to reduce size and overhead which trades off some accuracy for space.
                     </p>
                 </div>
     
-                <div class="timeline-item">
-                    <timeline-heading>
-                        <h3 class="timeline-entry-name">Web Developer</h3>
-                        <span>2017 - Present</span>
-                    </timeline-heading>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat, suscipit pariatur corporis sed necessitatibus nesciunt perspiciatis atque provident repudiandae ipsa corrupti quod commodi vel consequatur ipsum. Ipsa, dicta perspiciatis.
-                    </p>
-                </div>
-    
-                <div class="timeline-item">
-                    <timeline-heading>
-                        <h3 class="timeline-entry-name">Web Developer</h3>
-                        <span>2017 - Present</span>
-                    </timeline-heading>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat, suscipit pariatur corporis sed necessitatibus nesciunt perspiciatis atque provident repudiandae ipsa corrupti quod commodi vel consequatur ipsum. Ipsa, dicta perspiciatis.
-                    </p>
-                </div>
+                
             </div>
         </div>
     </section>
-
+<!-- 
     <section class="my-portfolio" id="portfolio">
         <div class="container">
             <div class="heading-group">
@@ -308,7 +300,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="contact" id="contact">

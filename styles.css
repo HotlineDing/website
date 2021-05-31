@@ -300,6 +300,10 @@ section:not(.hero) {
     letter-spacing: .5rem;
 }
 
+.intro-description p {
+    line-height: 4rem;
+}
+
 .intro-description p:not(:last-child) {
     margin-bottom: 2rem;
 }
@@ -312,15 +316,21 @@ section:not(.hero) {
 
 }
 
+.resume {
+    text-align: center;
+}
+
 .call-to-action {
     background-color: var(--yellow-color);
     margin-top: 5rem;
-    padding: 3rem;
+    padding: 2rem;
     color: var(--dark-color);
+    display: inline-block;
+    text-align: center;
 }
 
 .call-to-action p{
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 2rem;
 }
@@ -337,6 +347,7 @@ section:not(.hero) {
 .cta-btn {
     color: var(--dark-color);
     border: 1px solid var(--dark-color);
+    justify-content: center;
 }
 
 .cta-btn:hover {
@@ -348,16 +359,17 @@ section:not(.hero) {
 /* My Expertise */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 2.5rem;
 }
 
 .my-expertise .grid-item {
     background-color: #fff;
-    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15);
     padding: 2rem;
     border-bottom: 3px solid transparent;
     position: relative;
+    /* min-width: 300px; */
 }
 
 .grid-item.orange {
@@ -610,13 +622,19 @@ section:not(.hero) {
     margin-bottom: 2rem;
 }
 
+.timeline-heading span {
+    letter-spacing: .75px;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
 .timeline-entry-name {
     /* display: inline-block; */
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 1px;
     color: var(--dark-color);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 
@@ -841,7 +859,7 @@ section:not(.hero) {
 @media screen and (max-width: 768px) {
     .grid,
     .my-portfolio .grid {
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
 
     .scroll-down {
